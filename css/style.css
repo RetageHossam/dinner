@@ -1,0 +1,70 @@
+:root {
+  --main-color: #FF5800;
+  
+  --text-grey: #888888;
+}
+.orange-color{
+  background-color: var(--main-color);
+  color: white;
+}
+.nav-img img{
+  width:40px;
+  height: 40px;
+}
+.btn-style{
+background-image: linear-gradient(to right,var(--main-color),#FC3532);
+color: white;
+border: 0;
+}
+.btn{
+  transition: all 0.3s;
+}
+.btn:hover {
+    color: white;
+ transform: scale(1.03);
+}
+svg{
+  width: 20px;
+}
+.nav-item button{
+  color: var(--text-grey);
+  font-weight: 700;
+}
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--main-color)
+}
+.btn-ing{
+  position: relative;
+}
+.btn-ing::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #E5E7EB;
+  position: absolute;
+  top: 35%;
+  left: 0;
+}
+.ing-list{
+  background-color: #FFF9EC;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
+  height: 250px;
+  overflow-y: auto;
+}
+
+
+.ing-list li{
+  padding: 0.6rem;
+}
+.img-footer{
+  position: absolute;
+  top:13%;
+  left: 10%;
+
+} 
+

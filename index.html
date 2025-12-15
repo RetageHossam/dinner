@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's for Dinner</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/style.css">
+ <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-white shadow">
+  <div class="container">
+<div class="d-flex align-items-center justify-content-center gap-3 my-2">
+        <i class=" fa-solid fa-utensils orange-color bg-gradient rounded-circle p-3"></i>
+<div >
+        <a class="navbar-brand fw-bold " href="#">What's For Dinner</a>
+    <p class="m-0">Your daily meal inspiration</p>
+</div>
+</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto d-flex align-items-center gap-4   mb-2 mb-lg-0 ">
+        <li class="nav-item">
+        <i class="fa-solid fa-bookmark fs-5"></i>
+        </li>
+            <li class="nav-item">
+           <i class="fa-solid fa-refresh"></i>
+        </li>
+        <li class="nav-item ">
+           <i class="fa-solid fa-gear"></i>
+        </li>
+   <li class="nav-item nav-img " >
+<img src="./images/avatar-2 (1).jpg" alt="" class="rounded-circle">
+        </li>
+  
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<section class="p-md-5 p-3">
+<div class="inner px-0  px-md-5 ">
+        <div class="card mb-3 rounded-5 w-100  shadow  ">
+  <div class="row g-0">
+    <div class="col-md-5">
+      <img src="./images/meal-1.jpg" id="image" class=" position-relative w-100 h-100 object-fit-cover rounded-5" alt="...">
+      <span class="badge position-absolute top-0 start-0 mt-3 ms-4 bg-white text-black px-3 py-2 rounded-4  "><i class="fa-solid fa-star text-warning fs-5 me-2 "></i><span id="rate">4.7(389 reviews)</span></span>
+      <div class="img-footer d-flex gap-md-5 gap-2 bg-white justify-content-center rounded-3">
+        <div class="img-timer  text-center p-3 p-md-3">
+          <i class="fa-solid fa-clock text-warning-emphasis"></i>
+          <p class="m-2 fw-lighter">Prep Time</p>
+          <p class="fw-bold" id="clock">20 min</p>
+        </div>
+          <div class="img-timer  text-center p-3 p-md-3">
+          <i class="fa-solid fa-fire-burner text-danger"></i>
+          <p class="m-2 fw-lighter">Cook Time</p>
+          <p class="fw-bold" id="cook">30 min</p>
+        </div>
+          <div class="img-timer  text-center p-3 p-md-3 ">
+          <i class="fa-solid fa-users text-primary "></i>
+          <p class="m-2 fw-lighter fw-lighter">Servings</p>
+          <p class="fw-bold"id="user">4 people</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="card-body p-5 w-100">
+      <span class="badge text-bg-success fw-bold text-success bg-opacity-50" id="level">Intermediate</span>
+            <span class="badge text-bg-primary fw-bold text-primary bg-opacity-50" id="contr">Asian</span>
+<div class="card-content  d-flex  justify-content-between mt-3 ">
+   <div class="card-head">
+      <h3 id="meal">Chicken Tikka Masala</h3>
+     <p id="mealDescrp">Rich and creamy Indian curry with tender chicken pieces
+</p>
+
+   </div>
+   <div class="card-icons d-flex align-items-center gap-1 ">
+    <i class="fa-solid fa-bookmark p-3 rounded-2 bg-danger bg-opacity-10 text-danger " ></i>
+        <i class="fa-solid fa-share-nodes p-3 rounded-2 bg-danger bg-opacity-10 text-danger " ></i>
+</div>
+</div>
+<div class="alert alert-danger d-flex align-items-center border border-5 border-danger border-end-0 border-top-0 border-bottom-0" role="alert">
+  <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2 " viewBox="0 0 16 16" role="img" aria-label="Warning:">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </svg>
+  <div class="text-danger p-0 m-0 ms-2" id="extendedAlert">
+   <p class="m-0">Extended Preparation Time</p>
+   <p>This recipe requires more than 45 minutes to prepare. Plan accordingly!
+
+
+</p>
+
+  </div>
+  
+</div>
+
+<ul class="nav nav-underline   mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item px-3" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-list me-2"></i>Ingredients</button>
+  </li>
+  <li class="nav-item px-3" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-book-open me-2"></i>Instructions</button>
+  </li>
+  <li class="nav-item px-3" role="presentation">
+    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-solid fa-chart-pie me-2"></i>Nutrition</button>
+  </li>
+  <li class="nav-item px-3" role="presentation">
+        <button class="nav-link" id="pills-chef-tab" data-bs-toggle="pill" data-bs-target="#pills-chef" type="button" role="tab" aria-controls="pills-chef" aria-selected="false"><i class="fa-solid fa-lightbulb me-2"></i>Chef's Tips</button>
+
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active   " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+<div class="ing-list overflow-y-scroll overflow-x-hidden ">
+        <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">1</span>
+<p id="list" class="mt-2 mb-2">600g chicken breast, cubed</p>
+ 
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">2</span>
+<p id="list1" class="mt-2 mb-2">1 cup plain yogurt</p>
+ 
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">3</span>
+<p id="list2" class="mt-2 mb-2">1 cup plain yogurt</p>
+ 
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">4</span>
+
+<p id="list3" class="mt-2 mb-2">400ml coconut cream</p>
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">5</span>
+<p id="list4" class="mt-2 mb-2">1 onion, diced</p>
+ 
+  </li>
+         <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">6</span>
+<p id="list5" class="mt-2 mb-2">4 cloves garlic, minced</p>
+
+ 
+  </li>
+           <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">7</span>
+<p id="list6" class="mt-2 mb-2">2 tablespoons ginger, grated</p>
+  </li>
+             <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">8</span>
+<p id="list7" class="mt-2 mb-2">400g canned tomatoes</p>
+  </li>
+               <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-3">
+           <span class="badge orange-color rounded-pill mt-1">9</span>
+<p id="list8" class="mt-2 mb-2">Fresh cilantro for garnish</p>
+  </li>
+</div>
+
+
+  </div>
+
+  <div class="tab-pane fade  pb-5 pt-0" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+    <div class="ing-list overflow-y-scroll overflow-x-hidden ">
+        <li class="list-group-item d-flex gap-4  my-2 align-items-center m-2">
+           <span class="badge orange-color rounded-3 fs-5 p-3">1</span>
+<p class="mt-2" id="Inst">Marinate chicken in half the yogurt and 1 tablespoon tikka paste for at least 30 minutes.</p>
+
+
+ 
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-2">
+           <span class="badge orange-color rounded-3  fs-5 p-3">2</span>
+<p class="mt-2" id="Inst1">Heat oil in a large pan, cook marinated chicken until browned. Remove and set aside.</p>
+
+
+ 
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-2">
+           <span class="badge orange-color rounded-3  fs-5 p-3">3</span>
+<p class="mt-2" id="Inst2">In the same pan, sauté onion until soft. Add garlic and ginger, cook for 1 minute.</p>
+
+
+ 
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-2">
+           <span class="badge orange-color rounded-3 fs-5 p-3 ">4</span>
+
+<p class="mt-2" id="Inst3">Add remaining tikka paste and canned tomatoes. Simmer for 10 minutes.</p>
+
+
+ 
+  </li>
+       <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-2">
+           <span class="badge orange-color rounded-3 fs-5 p-3 ">5</span>
+<p class="mt-2" id="Inst4">Stir in coconut cream and remaining yogurt. Add chicken back to the pan.</p>
+
+
+ 
+  </li>
+         <li class="list-group-item d-flex gap-4  my-2 align-items-center ms-2">
+           <span class="badge orange-color rounded-3 fs-5 p-3 ">6</span>
+<p class="mt-2" id="Inst5">Simmer for 15 minutes until sauce thickens. Garnish with cilantro and serve with rice.</p>
+
+
+ 
+  </li>
+
+</div>
+  </div>
+  <div class="tab-pane fade pb-5 pt-4" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="calories bg-secondary bg-opacity-10 rounded-3 p-3 d-flex justify-content-between align-items-center">
+          <span><i class="fa-solid fa-fire bg-danger bg-opacity-10 p-3 me-2 rounded-4 text-danger "></i>Calories</span>
+          <p class="fw-bold mt-2"id="kcal">450 kcal</p>
+        </div>
+
+      </div>
+           <div class="col-md-6 mt-2 mt-md-0">
+        <div class="calories bg-secondary bg-opacity-10 rounded-3 p-3 d-flex justify-content-between align-items-center">
+          <span><i class="fa-solid fa-dumbbell bg-primary bg-opacity-10 p-3 me-2 rounded-4 text-primary "></i>Protein</span>
+          <p class="fw-bold mt-2" id="gram">38g</p>
+        </div>
+
+      </div>
+    </div>
+        <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="calories bg-secondary bg-opacity-10 rounded-3 p-3 d-flex justify-content-between align-items-center">
+          <span><i class="fa-solid fa-wheat-alt bg-warning bg-opacity-10 p-3 me-2 rounded-4 text-warning "></i>Carbohydrates</span>
+          <p class="fw-bold mt-2" id="carbo">24g</p>
+        </div>
+
+      </div>
+           <div class="col-md-6 mt-2 mt-md-0">
+        <div class="calories bg-secondary bg-opacity-10 rounded-3 p-3 d-flex justify-content-between align-items-center">
+          <span><i class="fa-solid fa-droplet bg-danger bg-opacity-10 p-3 me-2 rounded-4 text-danger "></i>Fat</span>
+          <p class="fw-bold mt-2" id="fat">22g</p>
+        </div>
+
+      </div>
+    </div>
+            <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="calories bg-secondary bg-opacity-10 rounded-3 p-3 d-flex justify-content-between align-items-center">
+          <span><i class="fa-solid fa-seedling bg-success bg-opacity-10 p-3 me-2 rounded-4 text-success "></i>Fiber</span>
+          <p class="fw-bold mt-2"id="fiber">4g</p>
+        </div>
+
+      </div>
+           <div class="col-md-6 mt-2 mt-md-0">
+        <div class="calories bg-secondary bg-opacity-10 rounded-3 p-3 d-flex justify-content-between align-items-center">
+          <span><i class="fa-solid fa-cube bg-danger bg-opacity-10 p-3 me-2 rounded-4 text-danger "></i>Sodium</span>
+          <p class="fw-bold mt-2" id="sodium">760mg</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="pills-chef" role="tabpanel" aria-labelledby="pills-chef-tab" tabindex="0">
+<div class="alert p-2 bg-danger bg-opacity-10 d-flex align-items-center border border-5 border-warning border-end-0 border-top-0 border-bottom-0" role="alert">
+<i class=" fa-solid fa-check-circle mx-3"></i>
+  
+  
+   <p class="mt-3"id="marinate">Marinate chicken overnight for deeper flavor
+
+
+</p>
+
+
+  
+</div>
+<div class="alert p-2 bg-danger bg-opacity-10 d-flex align-items-center border border-5 border-warning border-end-0 border-top-0 border-bottom-0" role="alert">
+<i class=" fa-solid fa-check-circle mx-3"></i>
+  
+  
+   <p class="mt-3"id="full">Use full-fat coconut cream for richest sauce
+
+
+</p>
+
+
+  
+</div>
+<div class="alert p-2 bg-danger bg-opacity-10 d-flex align-items-center border border-5 border-warning border-end-0 border-top-0 border-bottom-0" role="alert">
+<i class=" fa-solid fa-check-circle mx-3"></i>
+  
+  
+   <p class="mt-3"id="spice">Adjust spice level by varying the tikka paste amount
+
+
+</p>
+
+
+  
+</div>
+<div class="alert p-2 bg-danger bg-opacity-10 d-flex align-items-center border border-5 border-warning border-end-0 border-top-0 border-bottom-0" role="alert">
+<i class=" fa-solid fa-check-circle mx-3"></i>
+  
+  
+   <p class="mt-3"id="serve">Serve with naan bread and basmati rice
+</p>
+
+
+  
+</div>
+  </div>
+
+</div>
+    <div class="btn-ing">
+    <button type="button" onclick="TryRecipe()" class="btn btn-style bg-opacity-50 btn-lg mt-5"><i class="fa-solid fa-refresh
+      me-2"></i>Try Another Recipe</button>
+
+</div> 
+        </div>
+</div>
+</div>
+        </div>
+</div>
+</section>
+<script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- -->
